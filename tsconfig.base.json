@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "modules/book-list": ["modules/book-list/src/index.ts"],
       "modules/shared": ["modules/shared/src/index.ts"]
     }
   },

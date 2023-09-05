@@ -1,0 +1,5 @@
+<div *ngFor="let book of repo.books$ | async">
+    <em>{{ book.id }}</em>
+    <p>{{ book.volumeInfo.title }}</p>
+    <span> by {{ book.volumeInfo.authors }}</span>
+</div>

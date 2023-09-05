@@ -17,6 +17,8 @@
     "@angular/platform-browser": "~16.2.0",
     "@angular/platform-browser-dynamic": "~16.2.0",
     "@angular/router": "~16.2.0",
+    "@ngneat/elf": "^2.3.2",
+    "@ngneat/elf-entities": "^4.5.0",
     "@nx/angular": "16.7.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
