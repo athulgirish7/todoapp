@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Route } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { bookListRoutes } from './lib.routes';
 import { GenerateBookServiceService } from './services/generate-book-service.service';
 import { HttpClientModule } from '@angular/common/http';

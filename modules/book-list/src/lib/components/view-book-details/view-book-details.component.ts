@@ -19,4 +19,8 @@ export class ViewBookDetailsComponent {
       console.log(state);
     })
   }
+
+  addToLib(id: string){
+    this.repo.addToLibrary(id);
+  }
 }

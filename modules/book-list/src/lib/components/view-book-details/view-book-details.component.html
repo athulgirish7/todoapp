@@ -2,4 +2,9 @@
   <em>{{ book.id }}</em>
   <p class="title">📚{{ book.volumeInfo.title }}</p>
   <span> by {{ book.volumeInfo.authors }}</span>
+  <div>
+    <button (click)="addToLib(book.id)" class="add-button">
+      Add to My Library
+    </button>
+  </div>
 </div>

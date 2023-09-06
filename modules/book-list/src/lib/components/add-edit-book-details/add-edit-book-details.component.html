@@ -1,1 +1,14 @@
-<p>add-edit-book-details works!</p>
+<div class="books" *ngFor="let book of repo.ownBooks$ | async">
+  <em>{{ book.id }}</em>
+  <p class="title">📚{{ book.volumeInfo.title }}</p>
+  <span> by {{ book.volumeInfo.authors }}</span>
+  <div>
+    <button (click)="removeFromLib(book.id)" class="remove-button">
+      Remove from My Library
+    </button>
+  </div>
+</div>
+<div *ngIf="isCartEmpty">
+  <h2>Cart is Empty</h2>
+  <p>Your cart is currently empty! Add some items to checkout.</p>
+</div>
