@@ -12,14 +12,14 @@ export class GenerateBookServiceService {
   getBooks() {
     const books = [
     {
-      id: '100',
+      id: 'M08-978-3-16-148410-0',
       volumeInfo: {
         title: 'Mary had a little lamb',
         authors: ['Author 1', 'Author 2']
       }
     },
     {
-      id: '101',
+      id: 'HD-09-067-8-18-279010-0',
       volumeInfo: {
         title: 'Humpty Dumpty',
         authors: ['Author H', 'Author D']

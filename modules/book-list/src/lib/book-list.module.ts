@@ -16,6 +16,6 @@ import { AddEditBookDetailsComponent } from './components/add-edit-book-details/
   ],
   declarations: [ViewBookDetailsComponent, AddEditBookDetailsComponent],
   providers: [GenerateBookServiceService],
-  exports: [ViewBookDetailsComponent, AddEditBookDetailsComponent],
+  exports: [],
 })
 export class BookListModule {}
