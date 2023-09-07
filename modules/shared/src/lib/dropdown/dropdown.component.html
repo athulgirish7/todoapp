@@ -1,0 +1,25 @@
+<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" [attr.data-dropdown-placement]="placement"
+    class="capitalize font-medium rounded-lg text-sm py-2.5 text-center inline-flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-white"
+    type="button">
+    <svg-icon [src]="value['icon']" class="pr-2" svgClass="inline"
+        [svgStyle]="{ 'width.px':15, 'height.px':15 }"></svg-icon>
+    {{ value[textField] }}
+    <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+    </svg>
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+        <li *ngFor="let item of data">
+            <button
+                class="capitalize text-left w-full px-4 py-2 hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                (click)="onSelect(item)">
+                <svg-icon [src]="item['icon']" class="pr-2" svgClass="inline"
+                    [svgStyle]="{ 'width.px':15, 'height.px':15 }"></svg-icon> {{item[textField]}}
+            </button>
+        </li>
+    </ul>
+</div>
