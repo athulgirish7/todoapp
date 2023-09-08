@@ -4,7 +4,10 @@
     {
       "files": ["*.ts"],
       "extends": [
+        "eslint:recommended",
         "plugin:@nx/angular",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/all",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
@@ -23,7 +26,15 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "quotes": "off",
+        "@typescript-eslint/quotes": [
+          "error",
+          "single"
+        ],        
+        "@angular-eslint/prefer-on-push-component-change-detection": "off",
+        "no-console": ["error", { "allow": ["warn", "error"] }],        
+        "key-spacing": ["error", { "afterColon": true }]
       }
     },
     {
